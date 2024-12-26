@@ -25,7 +25,7 @@ CMD ["pm2-runtime", "start", "ecosystem.config.js"]
 - `FROM node:20-alpine3.16`: Image
 - `WORKDIR /app`: thư mục làm việc (trong hệ điều hành `alpine3.16`), các lệnh (ngoại trừ lệnh `COPY`) sẽ thực hiện trong thư mục này
 - `COPY package.json .`: copy file này vô thư mục /app (root)
-- `COPY ecosystem.config.js .`: file cấu hình của PM2 quản lý và chạy ứng dụng
+- `COPY ecosystem.config.js .`: file cấu hình của PM2 quản lý tiến trình và chạy ứng dụng NodeJs
 - `COPY ./src ./src`: copy folder này vô thư mục /app/src
 - `RUN apk add python3`: sẽ cài vào hệ điều hành `alpine3.16`
 - `RUN npm install pm2 -g`: cài đặt package cho ứng dụng (-g: toàn cục trên hệ điều hành)
