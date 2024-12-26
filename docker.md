@@ -33,3 +33,6 @@ CMD ["pm2-runtime", "start", "ecosystem.config.js"]
 - `CMD ["pm2-runtime", "start", "ecosystem.config.js", "--env", "production"]`: CMD cần chạy khi chạy Container, sử dụng Array thay vì dấu cách như **pm2-runtime start ecosystem.config.js --env production**
 - Toàn bộ được Docker cài lên máy ảo (hệ điều hành alpine3.16)
 - Trong trường hợp cần `Mapping` giữa máy ảo Docker và máy thật thì xem `Docker Volume`
+
+# Docker Compose
+- Nếu một câu lệnh Container Run (tạo Container) quá dài thì tạo 1 file Config rồi Run file Config này
